@@ -1,4 +1,73 @@
+# 📧 MNV Mailer Automation (NestJS Cron Job)
+
+Welcome to the **MNV Mailer App**! This is a robust backend automation tool built with **NestJS** to handle scheduled tasks, specifically sending daily greeting emails to employees using Cron jobs.
+
+## 📝 What is a Cron Job?
+
+A **Cron Job** is a time-based job scheduler. In simple words, it’s a way to tell your computer: *"Hey, do this specific task automatically at this exact time every day/hour/minute."*
+
+In this project, we use the `@nestjs/schedule` package to trigger email events without any manual intervention.
+
+---
+
+## ⚙️ How it Works
+
+The heart of this application is the **Cron Expression**. Here is how the timing is defined:
+
+```typescript
+@Cron('0 30 10 * * *') // Triggers exactly at 10:30:00 AM
+//      |  |  |  |  |  |
+//      |  |  |  |  |  └── Day of Week (0-7)
+//      |  |  |  |  └───── Month (1-12)
+//      |  |  |  └──────── Day of Month (1-31)
+//      |  |  └─────────── Hour (0-23)
+//      |  └────────────── Minute (0-59)
+//      └───────────────── Second (0-59)
+
 ```
+
+---
+
+## 🌟 Benefits of Using Cron Jobs
+
+* **Automation:** No need to remember to send daily reports or greetings manually.
+* **Consistency:** Emails are sent at the exact same time every day.
+* **Efficiency:** Reduces manual workload and minimizes human error.
+* **Scalability:** You can easily add more tasks like database backups or cleanup logs.
+
+---
+
+## 🚀 Application Execution Logs
+
+When the server is running, the Cron job monitors the system time and executes the `sendDailyGreeting` method.
+
+**Screenshot of successful execution:**
+
+**Live Terminal Output:**
+
+```bash
+[Nest] LOG [AppService] Success: Mail sent to gauri@mediannv.com
+Success: Mail sent to gauri@mediannv.com
+
+```
+
+---
+
+## 🛠️ Extra Information
+
+* **Security:** This app uses `ConfigService` to keep sensitive credentials (Email & App Passwords) hidden in a `.env` file.
+* **Timezone:** Specifically configured for `Asia/Kolkata` to ensure the timing matches the Indian Standard Time (IST).
+* **Error Handling:** Includes a `try-catch` block with a `Logger` to track failed attempts if the SMTP server is down.
+
+---
+
+## 👤 Author
+
+**Gauri Bidwai**
+*AI-assisted Automation Developer*
+
+
+<!-- ```
 @Cron('0 30 10 * * *') // Current: 10:30:00 AM
 //      |  |  |  |  |  |
 //      |  |  |  |  |  └── Day of Week
@@ -9,6 +78,8 @@
 //      └───────────────── Second (0-59)
 
 ```
+
+https://i.ibb.co/h3pvkry/cron-Basic.png
 
 Application is running on: http://localhost:4000
 npm run start
@@ -51,9 +122,7 @@ Testing Config: { user: 'testgauri06@gmail.com', pass: 'EXISTS' }
 Success: Mail sent to gauri@mediannv.com
 [Nest] 101372  - 03/12/2026, 5:50:02 PM     LOG [AppService] Success: Mail sent to gauri@mediannv.com
 Success: Mail sent to gauri@mediannv.com
-
-
-
+ -->
 
 <!-- <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="120" alt="Nest Logo" /></a>
