@@ -10,6 +10,48 @@
 
 ```
 
+Application is running on: http://localhost:4000
+npm run start
+> mnv-mailer-app@0.0.1 start
+> nest start
+[Application is running on: http://localhost:4000
+Cron job triggered: Sending daily greeting email
+Testing Config: { user: 'testgauri06@gmail.com', pass: 'EXISTS' }
+[Nest] 101372  - 03/12/2026, 5:42:02 PM     LOG [AppService] Success: Mail sent to gauri@mediannv.com
+Success: Mail sent to gauri@mediannv.com
+Cron job triggered: Sending daily greeting email
+Testing Config: { user: 'testgauri06@gmail.com', pass: 'EXISTS' }
+[Nest] 101372  - 03/12/2026, 5:43:02 PM     LOG [AppService] Success: Mail sent to gauri@mediannv.com
+Success: Mail sent to gauri@mediannv.com
+Cron job triggered: Sending daily greeting email
+Testing Config: { user: 'testgauri06@gmail.com', pass: 'EXISTS' }
+[Nest] 101372  - 03/12/2026, 5:44:02 PM     LOG [AppService] Success: Mail sent to gauri@mediannv.com
+Success: Mail sent to gauri@mediannv.com
+Cron job triggered: Sending daily greeting email
+Testing Config: { user: 'testgauri06@gmail.com', pass: 'EXISTS' }
+Cron job triggered: Sending daily greeting email
+Testing Config: { user: 'testgauri06@gmail.com', pass: 'EXISTS' }
+Cron job triggered: Sending daily greeting email
+Testing Config: { user: 'testgauri06@gmail.com', pass: 'EXISTS' }
+[Nest] 101372  - 03/12/2026, 5:47:02 PM     LOG [AppService] Success: Mail sent to gauri@mediannv.com
+Success: Mail sent to gauri@mediannv.com
+Cron job triggered: Sending daily greeting email
+Testing Config: { user: 'testgauri06@gmail.com', pass: 'EXISTS' }
+[Nest] 101372  - 03/12/2026, 5:48:02 PM     LOG [AppService] Success: Mail sent to gauri@mediannv.com
+Success: Mail sent to gauri@mediannv.com
+Cron job triggered: Sending daily greeting email
+Testing Config: { user: 'testgauri06@gmail.com', pass: 'EXISTS' }
+[Nest] 101372  - 03/12/2026, 5:49:02 PM     LOG [AppService] Success: Mail sent to gauri@mediannv.com
+Success: Mail sent to gauri@mediannv.com
+[Nest] 101372  - 03/12/2026, 5:49:03 PM     LOG [AppService] Success: Mail sent to gauri@mediannv.com
+Success: Mail sent to gauri@mediannv.com
+Cron job triggered: Sending daily greeting email
+Testing Config: { user: 'testgauri06@gmail.com', pass: 'EXISTS' }
+[Nest] 101372  - 03/12/2026, 5:50:02 PM     LOG [AppService] Success: Mail sent to gauri@mediannv.com
+Success: Mail sent to gauri@mediannv.com
+[Nest] 101372  - 03/12/2026, 5:50:02 PM     LOG [AppService] Success: Mail sent to gauri@mediannv.com
+Success: Mail sent to gauri@mediannv.com
+
 
 
 
