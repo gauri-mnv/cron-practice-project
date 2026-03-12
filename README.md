@@ -8,6 +8,10 @@ A **Cron Job** is a time-based job scheduler. In simple words, it’s a way to t
 
 In this project, we use the `@nestjs/schedule` package to trigger email events without any manual intervention.
 
+
+![cron practice](https://i.ibb.co/h3pvkry/cron-Basic.png) 
+
+
 ---
 
 ## ⚙️ How it Works
