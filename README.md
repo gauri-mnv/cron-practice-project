@@ -41,6 +41,20 @@ The heart of this application is the **Cron Expression**. Here is how the timing
 
 ---
 
+## drawbacks :
+
+Server Dependency: Agar tumhara server band (down) ho gaya, toh Cron job miss ho jayegi. Wo baad mein apne aap nahi chalti jab tak tumne alag se logic na likha ho.
+
+Overlapping Tasks: Agar ek task khatam hone se pehle hi agla Cron trigger ho jaye, toh server par load badh sakta hai ya data corrupt ho sakta hai.
+
+Debugging is Hard: Kyunki ye background mein chalta hai, agar ye fail ho jaye toh tumhe pata nahi chalega jab tak tum logs check na karo.
+
+Precision Issues: Standard Cron sirf minutes tak hi accurate hota hai. Agar tumhe millisecond level ki precision chahiye, toh Cron uske liye nahi hai.
+
+Scalability: Agar tumhare paas hazaron scheduled tasks hain, toh ek hi server par saare Crons chalana system ko slow kar sakta hai.
+
+---
+
 ## 🚀 Application Execution Logs
 
 When the server is running, the Cron job monitors the system time and executes the `sendDailyGreeting` method.
